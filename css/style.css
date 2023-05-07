@@ -50,6 +50,9 @@ nav #navbar-left span {
   font-size: 1.5rem;
   margin-left: 2rem;
 }
+nav #navbar-left #menu {
+  display: none;
+}
 nav #navbar-right {
   width: 70%;
   height: 100%;
@@ -569,7 +572,7 @@ footer p {
     width: 100%;
     justify-content: space-between;
   }
-  nav #navbar-left .menu {
+  nav #navbar-left #menu {
     display: inline-block;
   }
   nav #navbar-right {
