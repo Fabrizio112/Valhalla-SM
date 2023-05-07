@@ -1,0 +1,52 @@
+#hours-section {
+    @include tamanio(100%, 80vh);
+    min-width: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagenes/pexels-nikolaos-dimou-1319459.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flex(column, center, center);
+    color: white;
+
+
+    #contenedor-texto {
+        @include tamanio(100%, 30%);
+        @include flex(column, center, center);
+
+        h4 {
+            font-size: $tamanio-titulo;
+        }
+
+        span {
+            font-size: $tamanio-parrafos-span;
+        }
+    }
+
+    #contenedor-horarios {
+        @include tamanio(90%, 70%);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        place-items: center;
+
+        div {
+            @include flex(column, space-evenly, center);
+            @include tamanio(100%, 50%);
+            border: 5px solid white;
+
+            span {
+                font-size: 1.7rem;
+                font-weight: bolder;
+            }
+
+            ul {
+                text-align: center;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

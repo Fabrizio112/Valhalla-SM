@@ -1,0 +1,84 @@
+#services-section {
+    @include tamanio(100%, 120vh);
+    min-width: 700px;
+    @include flex(column, space-around, center);
+    margin-bottom: 6rem;
+
+    #services-text {
+        @include tamanio(100%, 30%);
+        @include flex(column, center, center);
+        text-align: center;
+
+        h3 {
+            font-size: $tamanio-titulo;
+        }
+    }
+
+    #services-container-images {
+        @include tamanio(90%, 80%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+
+
+        div {
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+            @include flex(row, center, center);
+
+            &:hover .descripcion-imagen .aux {
+                opacity: 1;
+            }
+
+            &:hover .descripcion-imagen {
+                opacity: 1;
+                backdrop-filter: blur(2px);
+            }
+
+
+
+            &:nth-child(1):not(.descripcion-imagen, .aux) {
+                background-image: url(../imagenes/servicios1.jpg);
+            }
+
+            &:nth-child(2) {
+                background-image: url(../imagenes/servicios-opcion2.jpg);
+            }
+
+            &:nth-child(3) {
+                background-image: url(../imagenes/servicios-3.jpg);
+            }
+
+            .descripcion-imagen {
+                @include flex(column, center, center);
+                @include tamanio(100%, 100%);
+
+                .aux {
+                    opacity: 0;
+                    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+                    background-color: white;
+                    @include flex(column, center, center);
+                    @include tamanio(80%, 50%);
+
+
+                    span {
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                        margin-bottom: 2rem;
+                        text-align: center;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

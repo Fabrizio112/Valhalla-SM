@@ -1,0 +1,12 @@
+footer {
+    @include tamanio(100%, 30vh);
+    min-width: 700px;
+    @include flex(row, center, center);
+    background-color: black;
+    margin-top: 2rem;
+    color: white;
+
+    p {
+        font-size: 2rem;
+    }
+}

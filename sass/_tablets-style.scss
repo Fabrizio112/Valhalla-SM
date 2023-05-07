@@ -1,0 +1,164 @@
+ @media (max-width:768px) {
+     nav {
+         #navbar-left {
+             width: 100%;
+             justify-content: space-between;
+
+             .menu {
+                 display: inline-block;
+             }
+         }
+
+         #navbar-right {
+             display: none;
+         }
+     }
+
+     #about-section {
+         #about-text {
+             div {
+                 h2 {
+                     font-size: $tamanio-titulo-tablets;
+                 }
+
+                 span {
+                     font-size: $tamanio-parrafos-tablets;
+                 }
+
+                 p {
+                     font-size: $tamanio-parrafos-tablets;
+                 }
+             }
+         }
+     }
+
+     #services-section {
+         #services-text {
+             h3 {
+                 font-size: $tamanio-titulo-tablets;
+             }
+         }
+
+         #services-container-images {
+             div {
+                 .descripcion-imagen {
+                     .aux {
+                         span {
+                             font-size: 1.5rem;
+                         }
+
+                         ul {
+                             li {
+                                 font-size: $tamanio-parrafos-tablets;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+     #hours-section {
+         #contenedor-texto {
+             h4 {
+                 font-size: $tamanio-titulo-tablets;
+             }
+
+             span {
+                 font-size: $tamanio-parrafos-tablets;
+             }
+         }
+
+         #contenedor-horarios {
+             div {
+                 span {
+                     font-size: $tamanio-parrafos-tablets;
+                 }
+             }
+         }
+     }
+
+     #prices-section {
+         #prices-text {
+             #prices-text-first {
+                 h2 {
+                     font-size: $tamanio-titulo-tablets;
+                 }
+             }
+
+             #prices-text-second {
+                 #oferta {
+                     strong {
+                         font-size: $tamanio-parrafos-tablets;
+                     }
+
+                     div {
+                         strong {
+                             font-size: 1rem;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+     #testimonial-section {
+         #testimonial-text {
+             h5 {
+                 font-size: $tamanio-titulo-tablets;
+             }
+         }
+
+         #testimonial-container-cajas {
+             div {
+                 img {
+                     @include tamanio(70px, 70px);
+                 }
+
+                 p {
+                     font-size: $tamanio-parrafos-tablets;
+                 }
+
+                 i {
+                     font-size: 1.5rem;
+                 }
+             }
+         }
+     }
+
+     #contact-section {
+         #contact-text {
+             h6 {
+                 font-size: $tamanio-titulo-tablets;
+             }
+         }
+
+         #container-section {
+             #contact-section-left {
+                 i {
+                     font-size: 3em;
+                 }
+
+                 span {
+                     font-size: 1.5rem;
+                 }
+
+                 p {
+                     font-size: 1rem;
+                 }
+             }
+
+             #contact-section-right {
+                 #contenedor-red-tel {
+                     a {
+                         font-size: 1rem;
+                     }
+                 }
+
+                 #agendar {
+                     font-size: 1rem;
+                 }
+             }
+         }
+     }
+ }

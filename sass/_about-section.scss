@@ -1,0 +1,43 @@
+#about-section {
+    @include tamanio(100%, 100vh);
+    min-width: 700px;
+    @include flex(row, center, center);
+    background-color: #d3d3d399;
+
+    #about-image {
+        @include tamanio(50%, 100%);
+        @include flex(row, center, center);
+
+        img {
+            width: 80%;
+            height: 90%;
+            border-radius: 35px;
+        }
+
+
+    }
+
+    #about-text {
+        @include tamanio(50%, 100%);
+        @include flex(row, center, center);
+
+        div {
+            @include tamanio(80%, 80%);
+            @include flex(column, center, start);
+            gap: 2rem;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            span {
+                font-size: $tamanio-parrafos-span;
+            }
+
+            p {
+                font-size: $tamanio-parrafos-span;
+                margin-top: 8rem;
+            }
+        }
+    }
+}

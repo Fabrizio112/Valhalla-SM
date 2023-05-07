@@ -1,0 +1,37 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin tamanio($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$tamanio-parrafos-span: 1.5rem;
+$tamanio-titulo: 3rem;
+
+$tamanio-titulo-tablets: 2rem;
+$tamanio-parrafos-tablets: 1.2rem;
+
+$tamanio-titulo-celular: 4rem;
+$tamanio-parrafos-celular: 2.8rem;
+
+@import "general";
+@import "navbar";
+@import "header";
+@import "about-section";
+@import "services-section";
+@import "hours-section";
+@import "prices-section";
+@import "testimonial-section";
+@import "contact-section";
+@import "footer";
+@import "tablets-style";
+@import "phones-style";

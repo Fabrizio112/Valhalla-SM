@@ -1,0 +1,39 @@
+nav {
+    @include tamanio(100%, 12vh);
+    min-width: 700px;
+    @include flex(row, space-around, center);
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+
+    #navbar-left {
+        @include tamanio(30%, 100%);
+        @include flex(row, start, center);
+
+        span {
+            font-family: 'Bruno Ace', cursive;
+            color: white;
+            font-size: 1.5rem;
+            margin-left: 2rem;
+        }
+    }
+
+
+    #navbar-right {
+        @include tamanio(70%, 100%);
+
+        ul {
+            @include tamanio(100%, 100%);
+            @include flex(row, space-evenly, center);
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

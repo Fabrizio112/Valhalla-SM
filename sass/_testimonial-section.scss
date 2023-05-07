@@ -1,0 +1,50 @@
+#testimonial-section {
+    @include tamanio(100%, 120vh);
+    min-width: 700px;
+    @include flex(column, center, center);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagenes/fondo-testimonio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    #testimonial-text {
+        @include tamanio(80%, 30%);
+        @include flex(column, center, center);
+
+        h5 {
+            font-size: $tamanio-titulo;
+            color: white
+        }
+    }
+
+    #testimonial-container-cajas {
+        @include tamanio(85%, 70%);
+        @include flex(row, center, center);
+        gap: 2rem;
+
+        div {
+            @include flex(column, space-around, center);
+            @include tamanio(100%3, 80%);
+            background-color: white;
+            border-radius: 30px;
+
+            p {
+                width: 80%;
+                text-align: center;
+                font-size: $tamanio-parrafos-span;
+            }
+
+            i {
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+
+            img {
+                width: 150px;
+                border-radius: 50%;
+                height: 160px;
+                object-fit: cover;
+            }
+        }
+    }
+}

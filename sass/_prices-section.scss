@@ -1,0 +1,73 @@
+#prices-section {
+    @include tamanio(100%, 100vh);
+    min-width: 700px;
+    @include flex(row, center, center);
+
+    #prices-text {
+        @include tamanio(50%, 100%);
+        @include flex(column, center, center);
+
+        #prices-text-first {
+            @include tamanio(80%, 20%);
+            display: grid;
+            place-content: center;
+            gap: 1.5rem;
+
+            h2 {
+                font-size: $tamanio-titulo;
+            }
+
+            span {
+                font-size: $tamanio-parrafos-span;
+            }
+        }
+
+        #prices-text-second {
+            @include tamanio(80%, 80%);
+            @include flex(column, space-evenly, start);
+
+            #oferta {
+                @include tamanio(100%, 25%);
+                @include flex(column, start, center);
+                border-top: 1px solid #00000065;
+
+                strong {
+                    font-size: 2rem;
+                }
+
+                &:nth-child(4) {
+                    div {
+                        border-bottom: 1px solid #00000065;
+                    }
+                }
+
+                div {
+                    @include flex(row, space-between, center);
+                    @include tamanio(100%, 100%/3);
+                    border-top: 1px solid #00000065;
+
+                    strong {
+                        font-size: 1.5rem;
+                    }
+
+                    span {
+                        font-weight: bolder;
+                        color: green;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #prices-image {
+        @include tamanio(50%, 100%);
+        @include flex(row, center, center);
+
+        img {
+            width: 80%;
+            height: 90%;
+            border-radius: 35px;
+        }
+    }
+}

@@ -1,0 +1,284 @@
+@media (max-width:480px) {
+    header {
+        height: 180vh;
+        background-position-x: -1082px;
+
+        #header-text {
+            div {
+                width: 80%;
+
+                h1 {
+                    font-size: 7rem;
+                }
+
+                span {
+                    font-size: $tamanio-parrafos-celular;
+                }
+
+                a {
+                    font-size: $tamanio-parrafos-celular;
+                }
+            }
+        }
+    }
+
+    #about-section {
+        height: 220vh;
+        flex-direction: column-reverse;
+
+        #about-image {
+            @include tamanio(100%, 50%);
+
+            img {
+                @include tamanio(90%, 90%);
+            }
+        }
+
+        #about-text {
+            @include tamanio(100%, 50%);
+
+            div {
+                align-items: center;
+                text-align: center;
+
+                h2 {
+                    font-size: $tamanio-titulo-celular;
+                }
+
+                span {
+                    font-size: $tamanio-parrafos-celular;
+                }
+
+                p {
+                    font-size: $tamanio-parrafos-celular;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    #services-section {
+        height: 260vh;
+
+        #services-text {
+            height: 20%;
+
+            h3 {
+                width: 90%;
+                font-size: $tamanio-titulo-celular;
+            }
+        }
+
+        #services-container-images {
+            height: 80%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            div {
+                .descripcion-imagen {
+                    .aux {
+                        span {
+                            font-size: $tamanio-parrafos-celular;
+                        }
+
+                        ul {
+                            li {
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #hours-section {
+        height: 180vh;
+
+        #contenedor-texto {
+            height: 20%;
+            text-align: center;
+
+            h4 {
+                font-size: $tamanio-titulo-celular;
+            }
+
+            span {
+                font-size: $tamanio-parrafos-celular;
+            }
+        }
+
+        #contenedor-horarios {
+            height: 70%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            div {
+                @include tamanio(90%, 90%);
+
+                span {
+                    font-size: $tamanio-parrafos-celular;
+                }
+
+                ul {
+                    li {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #prices-section {
+        height: 250vh;
+        flex-direction: column;
+
+        #prices-text {
+            @include tamanio(100%, 50%);
+
+            #prices-text-first {
+                h2 {
+                    font-size: $tamanio-titulo-celular ;
+                }
+            }
+
+            #prices-text-second {
+                gap: 1.5rem;
+
+                #oferta {
+                    strong {
+                        font-size: 2rem;
+                        font-weight: 900;
+                    }
+
+                    div {
+                        strong {
+                            font-size: 2rem;
+                            font-weight: 300;
+                        }
+
+                        span {
+                            font-size: 2rem;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #prices-image {
+            @include tamanio(100%, 50%);
+
+            img {
+                @include tamanio(90%, 90%);
+            }
+        }
+    }
+
+    #testimonial-section {
+        height: 300vh;
+
+        #testimonial-text {
+            @include tamanio(100%, 15%);
+
+            h5 {
+                font-size: $tamanio-titulo-celular;
+                text-align: center;
+            }
+        }
+
+        #testimonial-container-cajas {
+            @include tamanio(85%, 80%);
+            flex-direction: column;
+
+            div {
+                img {
+                    @include tamanio(150px, 150px);
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+
+                i {
+                    font-size: $tamanio-parrafos-celular;
+                }
+            }
+        }
+    }
+
+    #contact-section {
+        height: 220vh;
+
+        #contact-text {
+            height: 20%;
+
+            h6 {
+                font-size: $tamanio-titulo-celular;
+            }
+        }
+
+        #container-section {
+            height: 80%;
+            flex-direction: column;
+            gap: 2rem;
+
+            #contact-section-left {
+                @include tamanio(90%, 50%);
+
+                i {
+                    font-size: 6em;
+                }
+
+                span {
+                    font-size: $tamanio-parrafos-celular;
+                }
+
+                p {
+                    font-size: $tamanio-parrafos-celular
+                }
+            }
+
+            #contact-section-right {
+                @include tamanio(100%, 50%);
+
+                #contenedor-red-tel {
+                    flex-direction: column;
+                    height: 80%;
+
+                    div {
+                        width: 90%;
+
+                        i {
+                            font-size: 6em;
+                        }
+
+                        a {
+                            font-size: $tamanio-parrafos-celular;
+                        }
+                    }
+                }
+
+                #agendar {
+                    margin-top: 2rem;
+                    font-size: $tamanio-parrafos-celular;
+                    padding: 0;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 30vh;
+
+        p {
+            font-size: 2rem;
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
