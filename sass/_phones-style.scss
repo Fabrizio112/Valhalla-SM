@@ -9,6 +9,8 @@
         }
 
         #navbar-right {
+            animation: none;
+
             ul {
                 height: 70%;
 
@@ -285,10 +287,14 @@
                 }
 
                 #agendar {
-                    margin-top: 2rem;
+                    margin-top: 4rem;
                     font-size: $tamanio-parrafos-celular;
                     padding: 0;
                     width: 90%;
+
+                    i {
+                        font-size: 2em;
+                    }
                 }
             }
         }

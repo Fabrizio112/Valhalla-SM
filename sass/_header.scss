@@ -11,7 +11,7 @@ header {
         @include flex(column, center, center);
 
         div {
-            @include tamanio(75%, 100%);
+            @include tamanio(90%, 100%);
             @include flex(column, center, center);
             text-align: center;
             gap: 1rem;
@@ -20,10 +20,12 @@ header {
                 font-size: 5rem;
                 font-family: 'Calistoga', cursive;
                 text-transform: uppercase;
+                animation: deIzquierdaADerecha 1.2s ease-in-out;
             }
 
             span {
                 font-size: $tamanio-parrafos-span;
+                animation: deArribaHaciaAbajo 1.5s ease-in;
             }
 
             a {
@@ -34,6 +36,14 @@ header {
                 background-color: white;
                 padding: 1.4rem 8rem;
                 border-radius: 30px;
+                animation: crecer 1.7s ease-in-out;
+                transition: .5s all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+                &:hover {
+                    color: white;
+                    background-color: black;
+                    border: 3px solid white;
+                }
             }
         }
     }
