@@ -568,6 +568,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
   nav #navbar-left {
     width: 100%;
     justify-content: space-between;
@@ -575,8 +578,21 @@ footer p {
   nav #navbar-left #menu {
     display: inline-block;
   }
+  nav #navbar-left #menu:hover {
+    cursor: pointer;
+  }
   nav #navbar-right {
     display: none;
+    width: 100%;
+  }
+  nav #navbar-right ul {
+    flex-direction: column;
+    position: fixed;
+    height: 50%;
+    background-color: black;
+  }
+  nav #navbar-right ul a li {
+    font-size: 2rem;
   }
   #about-section #about-text div h2 {
     font-size: 2rem;
@@ -647,6 +663,18 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  nav {
+    height: 20vh;
+  }
+  nav #navbar-left span {
+    font-size: 2rem;
+  }
+  nav #navbar-right ul {
+    height: 70%;
+  }
+  nav #navbar-right ul a li {
+    font-size: 3.5rem;
+  }
   header {
     height: 180vh;
     background-position-x: -1082px;

@@ -1,4 +1,26 @@
 @media (max-width:480px) {
+    nav {
+        height: 20vh;
+
+        #navbar-left {
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        #navbar-right {
+            ul {
+                height: 70%;
+
+                a {
+                    li {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
     header {
         height: 180vh;
         background-position-x: -1082px;

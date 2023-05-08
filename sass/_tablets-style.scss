@@ -1,16 +1,36 @@
  @media (max-width:768px) {
      nav {
+         flex-direction: column;
+
          #navbar-left {
              width: 100%;
              justify-content: space-between;
 
              #menu {
                  display: inline-block;
+
+                 &:hover {
+                     cursor: pointer;
+                 }
              }
          }
 
          #navbar-right {
              display: none;
+             width: 100%;
+
+             ul {
+                 flex-direction: column;
+                 position: fixed;
+                 height: 50%;
+                 background-color: black;
+
+                 a {
+                     li {
+                         font-size: 2rem;
+                     }
+                 }
+             }
          }
      }
 
